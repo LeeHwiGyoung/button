@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+:root {
+    /* btn 공통 변수 */
+    --btn--padding : 9px 25px;
+    --btn--box--shadow: 2px 2px 0px 0px #FFFFFF1A inset;
+    --btn--hover--box--shadow : 2px 2px 0px 0px #FFFFFF33 inset;
+    --btn--active--box--shadow : 2px 2px 0px 0px #00000033 inset;
+    --btn--border--color :#1A202C;
+    /* btn  nomal 변수 */
+    --btn--nomal--color : #CBD5DF;
+    --btn--nomal--bg : #343F50;
+    --btn--nomal--hover--color : #FFF;
+    --btn--nomal--hover--bg : #343F50;
+    --btn--nomal--active--color : #FFF;
+    --btn--nomal--active--bg : #343F50;
+    --btn--disabled--color : #4A5568;
+    --btn--disabled--bg : #343F50;  
+    /* btn positive 변수 */
+    --btn--positive--color : #439AFF;
+    --btn--positive--bg : #343F50;
+    --btn--positive--hover--border--color : #439AFF;
+    --btn--positive--hover--color : #FFF;
+    --btn--positive--hover--bg : #439AFF;
+    --btn--positive--active--border--color : #439AFF;
+    --btn--positive--active--color : #FFF;
+    --btn--positive--active--bg : #439AFF;
+
+}
+
+button {
+    box-sizing: border-box;
+    padding: var(--btn--padding);
+    cursor: pointer;
+}
+
+.btn-nomal {
+    font-size: 0.75em;
+    color : var(--btn--nomal--color);
+    background-color: var(--btn--nomal--bg);
+    border : 1px solid var(--btn--border--color);
+    box-shadow: var(--btn--box--shadow);
+}
+
+.btn-nomal:hover {
+    color : var(--btn--nomal--hover--color);
+    background-color: var(--btn--nomal--hover--bg);
+    text-decoration: underline;
+    box-shadow: var(--btn--hover--box--shadow);
+}
+
+.btn-nomal:active {
+    color : var(--btn--nomal--active--color);
+    background-color: var(--btn--nomal--active--bg);
+    text-decoration: underline;
+    box-shadow: var(--btn--active--box--shadow);
+}
+
+.btn-nomal:disabled {
+    color : var(--btn--disabled--color);
+    background-color: var(--btn--disabled--bg);
+}
+
+
+.btn-positive {
+    font-size: 0.75em;
+    color : var(--btn--positive--color);
+    background-color: var(--btn--positive--bg);
+    border : 1px solid var(--btn--border--color);
+    box-shadow: var(--btn--box--shadow);
+}
+
+.btn-positive:hover {
+    color : var(--btn--positive--hover--color);
+    background-color: var(--btn--positive--hover--bg);
+    border : 1px solid var(--btn--positive--hover--border--color);
+    box-shadow: var(--btn--hover--box--shadow);
+    text-decoration: underline;
+}
+
+.btn-positive:active {
+    color : var(--btn--positive--active--color);
+    background-color: var(--btn--positive--active--bg);
+    border : 1px solid var(--btn--positive--active--border--color);
+    box-shadow: var(--btn--active--box--shadow);
+    text-decoration: underline;
+}
+
+.btn-positive:disabled {
+    color : var(--btn--disabled--color);
+    background-color: var(--btn--disabled--bg);
+}
