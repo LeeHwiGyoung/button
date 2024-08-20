@@ -30,7 +30,15 @@
     --btn--positive--active--border--color : #439AFF;
     --btn--positive--active--color : #FFF;
     --btn--positive--active--bg : #439AFF;
-
+    /* btn negative 변수 */
+    --btn--negative--color : #EB5757;
+    --btn--negative--bg : #343F50;
+    --btn--negative--hover--border--color : #EB5757;
+    --btn--negative--hover--color : #FFF;
+    --btn--negative--hover--bg : #EB5757;
+    --btn--negative--active--border--color : #EB5757;
+    --btn--negative--active--color : #FFF;
+    --btn--negative--active--bg : #EB5757;
 }
 
 button {
@@ -38,6 +46,12 @@ button {
     padding: var(--btn--padding);
     cursor: pointer;
 }
+
+button:disabled {
+    color : var(--btn--disabled--color);
+    background-color: var(--btn--disabled--bg);
+}
+
 
 .btn-nomal {
     font-size: 0.75em;
@@ -59,11 +73,6 @@ button {
     background-color: var(--btn--nomal--active--bg);
     text-decoration: underline;
     box-shadow: var(--btn--active--box--shadow);
-}
-
-.btn-nomal:disabled {
-    color : var(--btn--disabled--color);
-    background-color: var(--btn--disabled--bg);
 }
 
 
@@ -91,7 +100,26 @@ button {
     text-decoration: underline;
 }
 
-.btn-positive:disabled {
-    color : var(--btn--disabled--color);
-    background-color: var(--btn--disabled--bg);
+.btn-negative {
+    font-size: 0.75em;
+    color : var(--btn--negative--color);
+    background-color: var(--btn--negative--bg);
+    border : 1px solid var(--btn--negativecolor);
+    box-shadow: var(--btn--box--shadow);
+}
+
+.btn-negative:hover {
+    color : var(--btn--negative--hover--color);
+    background-color: var(--btn--negative--hover--bg);
+    border : 1px solid var(--btn--negative--hover--border--color);
+    box-shadow: var(--btn--hover--box--shadow);
+    text-decoration: underline;
+}
+
+.btn-negative:active {
+    color : var(--btn--negative--active--color);
+    background-color: var(--btn--negative--active--bg);
+    border : 1px solid var(--btn--negative--active--border--color);
+    box-shadow: var(--btn--active--box--shadow);
+    text-decoration: underline;
 }
